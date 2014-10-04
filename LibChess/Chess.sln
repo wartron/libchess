@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibChess", "LibChess\LibChess.csproj", "{F889E87F-E16B-488A-BADF-DEC9FF4C4C76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "ChessServer\Server.csproj", "{2DA55899-F1A5-4A3A-AEF0-C52C7FD82C69}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F889E87F-E16B-488A-BADF-DEC9FF4C4C76} = {F889E87F-E16B-488A-BADF-DEC9FF4C4C76}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{B19C1613-63E1-448D-9DB8-31CEA8ED836E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F889E87F-E16B-488A-BADF-DEC9FF4C4C76} = {F889E87F-E16B-488A-BADF-DEC9FF4C4C76}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{44C9423D-4717-4151-9F66-5C216AD97AA2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2DA55899-F1A5-4A3A-AEF0-C52C7FD82C69} = {2DA55899-F1A5-4A3A-AEF0-C52C7FD82C69}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F889E87F-E16B-488A-BADF-DEC9FF4C4C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F889E87F-E16B-488A-BADF-DEC9FF4C4C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F889E87F-E16B-488A-BADF-DEC9FF4C4C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F889E87F-E16B-488A-BADF-DEC9FF4C4C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DA55899-F1A5-4A3A-AEF0-C52C7FD82C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA55899-F1A5-4A3A-AEF0-C52C7FD82C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA55899-F1A5-4A3A-AEF0-C52C7FD82C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA55899-F1A5-4A3A-AEF0-C52C7FD82C69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19C1613-63E1-448D-9DB8-31CEA8ED836E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19C1613-63E1-448D-9DB8-31CEA8ED836E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19C1613-63E1-448D-9DB8-31CEA8ED836E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19C1613-63E1-448D-9DB8-31CEA8ED836E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C9423D-4717-4151-9F66-5C216AD97AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C9423D-4717-4151-9F66-5C216AD97AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C9423D-4717-4151-9F66-5C216AD97AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C9423D-4717-4151-9F66-5C216AD97AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
